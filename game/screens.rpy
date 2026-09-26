@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Inicialización
 ################################################################################
 
@@ -250,9 +250,6 @@ screen quick_menu():
             textbutton _("Historial") action ShowMenu('history')
             textbutton _("Saltar") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Guardar") action ShowMenu('save')
-            textbutton _("Guardar R.") action QuickSave()
-            textbutton _("Cargar R.") action QuickLoad()
             textbutton _("Prefs.") action ShowMenu('preferences')
 
 
@@ -260,6 +257,14 @@ screen quick_menu():
 ## mientras el jugador no haya escondido explícitamente la interfaz.
 init python:
     config.overlay_screens.append("quick_menu")
+
+    # Desactiva la tecla rápida de GUARDAR.
+    # F5 deja de ejecutar el guardado rápido.
+    config.keymap["quick_save"] = []
+
+    # Desactiva la tecla rápida de CARGAR.
+    # F9 deja de ejecutar la carga rápida.
+    config.keymap["quick_load"] = []
 
 default quick_menu = True
 
@@ -304,11 +309,6 @@ screen navigation():
         else:
 
             textbutton _("Historial") action ShowMenu("history")
-
-            textbutton _("Guardar") action ShowMenu("save")
-
-        textbutton _("Cargar") action ShowMenu("load")
-
         textbutton _("Opciones") action ShowMenu("preferences")
 
         if _in_replay:
