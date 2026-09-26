@@ -3,8 +3,9 @@
 # Declara los personajes usados en el juego como en el ejemplo:
 
 define prota = Character("Parquita", color="#120000")
-define r= Character("Renzo", color="#F285B8")
+define r= Character("Renzo", color="#a41136")
 define v= Character("Valentina", color="#FFC7F0")
+define m= Character("Muerte", color="#000000")
 
 
 # El juego comienza aquí.
