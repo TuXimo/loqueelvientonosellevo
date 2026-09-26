@@ -71,7 +71,7 @@ label capitulo2:
             renzo "Si no soporta un chiste, no es para mí"
             "Parkita frunció el ceño"
 
-        "¿Por qué debe estar hermosa para ti?"
+        "¿Por qué debe estar hermosa para ti?":
             renzo "Si una mujer no se arregla para su hombre todos los días... ¿Para qué está?"
             "Parkita guardó silencio"
             "Pero decidió seguir preguntando"
@@ -82,13 +82,13 @@ label capitulo2:
     "Parkita observó"
 
     menu:
-        parquita "¿Ves que ella se ríe?"
+        parquita "¿Ves que ella se ríe?":
             renzo "No"
             "Se encogió de hombros porque ahora de adulto sabe que eso está mal"
             renzo "Yo era pequeño, no entendía lo que hacía"
             "Parkita lo observó fijamente"
 
-        parquita "¿Qué es lo divertido?"
+        parquita "¿Qué es lo divertido?":
             "renzo sonrió y dijo"
                 renzo "Poder tirarla con un poco de fuerza demuestra el sexo débil que es"
                 "Parkita quedó en silencio por un momento y soltó una frase que le trajo un feo recuerdo "
@@ -169,7 +169,7 @@ label capitulo2:
     "Mientras tanto...{w}"
     "otro alma esperaba a ser juzgada"
 
-    
+
 
     return
 
