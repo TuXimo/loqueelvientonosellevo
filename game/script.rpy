@@ -2,10 +2,10 @@
 
 # Declara los personajes usados en el juego como en el ejemplo:
 
-define p = Character("Parquita", color="#120000")
+define p = Character("Parquita", color="#2543a7")
 define r= Character("Renzo", color="#a41136")
 define v= Character("Valentina", color="#FFC7F0")
-define m= Character("Muerte", color="#000000")
+define m= Character("Muerte", color="#7d0000")
 
 
 
@@ -64,5 +64,5 @@ label start:
     "Parkita se quedó en silencio ¿Eso se supone que era un chiste?"
     "La Muerte ya se había ido y así comenzó el primer día de vacaciones de la Muerte y el primer día de trabajo de Parkita."
 
-    
+
     return
