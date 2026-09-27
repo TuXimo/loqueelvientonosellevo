@@ -1,25 +1,34 @@
 label capitulo4:
 
-    #scene bg room
+    scene azotea
+    play music "audio/parqui_musica.mp3"
 
-    show parquita
+    show parquita relajada at center
 
     "Parkita permaneció sola en lo alto del edificio."
     "Miró hacia el enorme parque, después miró su libro y lo abrió una vez más, pero las reglas seguían sin darle una respuesta."
     "Por primera vez desde que comenzó su trabajo... Parkita tenía 3 almas que podía salvar, tan diferentes entre sí que era difícil decidir."
 
     "Recordó a cada una de las almas que conoció durante su travesía:"
+
+    # Nota: no vi el nombre real del fondo en tu carpeta images/scenes/vale,
+    # dejé "vale" como placeholder, cambialo por el archivo real.
+    scene habitacion
+    show valentina relajada at center
     "Valentina: Podría aprender empatía por otros seres vivos."
+
+    scene renzo_parque
+    show renzo normal at center
     "Renzo: Podría aprender a cambiar y ser mejor para su familia."
+
+    scene fondo jugando
+    show sebastian con peluche at center
     "Sebastián: A veces solo hay que esperar a la persona..."
 
+    scene azotea
+    show parquita nerviosa at center
+
     "El destino de estas tres vidas estaba en sus manos. Usando todo lo que había aprendido, tomó su decisión:"
-
-    show parquita at left
-    show valentina at center
-    show renzo at right
-
-
 
     menu:
         "Salvar a Valentina":
@@ -45,7 +54,7 @@ label capitulo4:
     "El primer trabajo de la nueva Muerte había concluido."
 
     # [Nota de gameplay que el jugador elija a quien salvar
-    # que use lo aprendido para tomar la decisión]  
+    # que use lo aprendido para tomar la decisión]
 
     "FIN"
 

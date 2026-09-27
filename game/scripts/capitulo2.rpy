@@ -1,13 +1,22 @@
 label capitulo2:
 
-    # --- INTRODUCCIÓN DEL CAPÍTULO 2 ---
+    # =========================================================
+    # INTRODUCCIÓN DEL CAPÍTULO 2
+    # =========================================================
 
-    scene bg room
+    scene hospital with fade
+
+    play audio "audio/renzo_musica.mp3" loop
+
+    show renzo normal at right
+    show parquita relajada at left
 
     "Un piso más arriba, Parkita encontró a un hombre, su nombre era Renzo, un obrero que había estado trabajando durante el ciclón, una ráfaga de viento había provocado que una pieza de metal lo atravesara, su estado era crítico."
+
     "Parkita se acercó y dijo:"
 
     parquita "Hola, Renzo."
+
     "El hombre levantó la mirada pensando en que había despertado de la cirugía."
 
     parquita "Sé que estás asustado."
@@ -42,13 +51,25 @@ label capitulo2:
 
     "Sin nada más que decir, Parkita chasqueó los dedos."
 
-    #-RECUERDO 1-
+
+    # =========================================================
+    # RECUERDO 1 - RESTAURANTE
+    # =========================================================
+
+    scene renzo_restaurante with fade
+
+    show renzo mujer at right
+    show parquita relajada at left
 
     "Renzo estaba sentado frente a una mujer, era su primera cita. La mujer se había arreglado para la ocasión, pero algo había salido mal con su maquillaje y Renzo comenzó a reírse."
 
     renzo "Jajajja."
 
     "La mujer lo miró confundida."
+
+    # No existe renzo enojado.png,
+    # por eso mantenemos la imagen disponible de Renzo.
+    show renzo normal at center with dissolve
 
     renzo "Tu maquillaje está horrible."
 
@@ -67,39 +88,75 @@ label capitulo2:
     "Parkita lo observó."
 
     menu:
+
         "¿Por qué sonríes si ella se fue llorando?":
+
             renzo "Si no soporta un chiste, no es para mí."
+
             "Parkita frunció el ceño."
 
         "¿Por qué debe estar hermosa para ti?":
+
             renzo "Si una mujer no se arregla para su hombre todos los días... ¿Para qué está?"
+
             "Parkita guardó silencio."
+
             "Pero decidió seguir preguntando."
 
-    #-RECUERDO 1,2-
+
+    # =========================================================
+    # RECUERDO 1.2 - PARQUE
+    # =========================================================
+
+    scene renzo_parque with fade
+
+    show renzo nina at right
+    show parquita relajada at left
 
     "Renzo era un niño, estaba jugando con una amiga. De repente, la empujó, la niña cayó al barro y su pantalón blanco quedó completamente manchado. La niña no se reía, pero Renzo sí."
+
     "Parkita observó."
 
     menu:
+
         "¿Ves que ella se ríe?":
+
             renzo "No."
+
             "Se encogió de hombros porque ahora de adulto sabe que eso está mal."
+
             renzo "Yo era pequeño, no entendía lo que hacía."
+
             "Parkita lo observó fijamente."
 
         "¿Qué es lo divertido?":
+
             "Renzo sonrió y dijo:"
+
             renzo "Poder tirarla con un poco de fuerza demuestra el sexo débil que es."
+
             "Parkita quedó en silencio por un momento y soltó una frase que le trajo un feo recuerdo."
+
             parquita "Una mariquita."
+
             "La sonrisa de Renzo desapareció por completo."
+
             "Parkita chasqueó los dedos."
 
-    #-RECUERDO 2-
+
+    # =========================================================
+    # RECUERDO 2 - CASA
+    # =========================================================
+
+    scene renzo_casa with fade
+
+    show renzo madre at right
+    show parquita relajada at left
 
     "Renzo tenía siete años, estaba jugando con su madre, se pintaban las uñas y se pintaban los labios, comían golosinas, era un recuerdo feliz para él... hasta que alguien entró en la habitación: su padre. Al verlo, su expresión cambió inmediatamente."
-    
+
+    show renzo padre at right
+
     padre "Sácate esa porquería de la cara."
 
     "Renzo dejó de sonreír."
@@ -126,6 +183,16 @@ label capitulo2:
 
     "Por primera vez, su expresión cambió. Ahora entendía algo: tal vez Renzo no había nacido siendo así, tal vez alguien le había enseñado a serlo, pero Parkita sabía que eso no borraba lo que había hecho, solo explicaba una parte. El recuerdo desapareció."
 
+
+    # =========================================================
+    # REGRESO AL PRESENTE
+    # =========================================================
+
+    scene hospital with fade
+
+    show renzo normal at right
+    show parquita relajada at left
+
     "Parkita volvió a mirar a Renzo."
 
     parquita "¿Por qué quieres vivir?"
@@ -147,6 +214,7 @@ label capitulo2:
     renzo "No dejaría salir a mi hija con alguien que sea como yo."
 
     "Silencio. Parkita cerró lentamente su libro: dos personas, dos vidas, dos razones para seguir viviendo, pero solo una podía recibir la oportunidad. Parkita todavía no podía decidir y entonces... sintió nuevamente aquella presencia, otra alma, otra persona, otro juicio."
+
     "Parkita miró a Renzo."
 
     parquita "Tu oportunidad todavía puede esperar."
@@ -166,6 +234,7 @@ label capitulo2:
     "Parkita se detuvo, no respondió, simplemente siguió caminando, dejando a Renzo sin saber si Parkita volvería por él."
 
     "Mientras tanto...{w}"
+
     "Otra alma esperaba a ser juzgada."
 
     return

@@ -5,4 +5,4 @@ define renzo = Character("Renzo", color="#a41136",what_font="gui/font/squadaOne-
 define valentina = Character("Valentina", color="#FFC7F0",what_font="gui/font/GochiHand-vale.ttf")
 define muerte = Character("Muerte", color="#8a5353")
 define padre = Character("Padre de Renzo", color="#5600b8")
-define sebastian=Character("Sebastián", color="#000000",what_font="gui/font/squadaOne-renzo.ttf")
+define sebastian=Character("Sebastián", color="#7d0707",what_font="gui/font/squadaOne-renzo.ttf")

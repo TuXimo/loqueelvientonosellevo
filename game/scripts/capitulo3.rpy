@@ -1,5 +1,9 @@
 label capitulo3:
 
+    scene hospital
+    show parquita relajada at left
+    play music "audio/seba_musica.mp3"
+
     "Parkita caminó por todo el hospital; aquella sensación seguía ahí. Alguien más estaba vivo, pero a diferencia de los demás, no parecía estar luchando por su vida."
     "Eso llamó inmediatamente la atención de Parkita. Hasta ese momento, todos habían querido vivir..."
     "Entonces... ¿Por qué él no?"
@@ -9,13 +13,13 @@ label capitulo3:
     "Parkita levantó su guadaña y separó su alma de su cuerpo, pero ocurrió algo extraño: Sebastián no tuvo miedo; de hecho, tenía una pequeña sonrisa en el rostro."
     "El joven miró a Parkita."
 
-    show sebastian at center
+    show sebastian normal at right
     sebastian "¿Aquí es donde moriré?"
 
     "La pregunta dejó confundida a la propia Muerte. Una sola pregunta apareció en su cabeza: ¿Él quiere morir?"
     "Parkita decidió preguntárselo directamente."
 
-    show parquita at left
+    show parquita relajada at left
     parquita "¿No me tienes miedo?"
 
     "Sebastián quedó en silencio durante unos segundos, miró al suelo, después levantó lentamente la mirada."
@@ -43,6 +47,10 @@ label capitulo3:
     "Parkita chasqueó los dedos, el hospital desapareció. Pero algo no estaba bien: había un recuerdo en la mente de Sebastián que parecía estar profundamente marcado. Parkita nunca había visto algo así."
 
     # --- RECUERDO 1 ---
+
+    scene fondo sentado
+    show sebastian traumado at right
+
     "Una habitación completamente oscura, las luces estaban apagadas. En una esquina había un niño llorando, era Sebastián, estaba sentado en el suelo, completamente solo."
     "Sobre la mesa de luz había un plato de comida que parecía llevar mucho tiempo sin tocarse."
     "Parkita observó la escena."
@@ -59,6 +67,10 @@ label capitulo3:
     "La soledad de aquella habitación comenzó a incomodarla; entendió que aquel recuerdo era demasiado doloroso para él, así que decidió no insistir, solo volvió a chasquear los dedos."
 
     # --- RECUERDO 2 ---
+
+    scene fondo jugando
+    show sebastian con peluche at right
+
     "Dos semanas antes. La misma habitación, pero ahora era diferente: había más color, más vida."
     "Sebastián estaba sentado en el suelo jugando con un pequeño dinosaurio de peluche verde."
     "Parkita observó la escena."
@@ -146,6 +158,14 @@ label capitulo3:
     sebastian "¿Por qué ese es tu traba...?"
 
     "Antes de que pudiera terminar la pregunta, Parkita chasqueó los dedos."
+
+    # --- AZOTEA ---
+    # No vi un fondo específico para esta escena en tu carpeta images/scenes;
+    # dejo "azotea" como placeholder, cambialo por el nombre real cuando lo tengas.
+    scene azotea
+    show sebastian normal at right
+    show parquita relajada at left
+
     "Sebastián apareció junto a Parkita en lo alto del edificio, frente a ellos se extendía un enorme parque, el viento soplaba con fuerza."
     "Parkita observó la ciudad durante unos segundos. Después miró a Sebastián."
 
@@ -166,6 +186,8 @@ label capitulo3:
     parquita "Es para entenderte."
 
     "Sebastián suspiró, finalmente habló:"
+
+    show sebastian traumado at right
 
     sebastian "Fui abusado."
 

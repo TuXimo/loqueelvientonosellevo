@@ -62,7 +62,7 @@ define config.has_voice = True
 ## el menú principal. Este archivo seguirá sonando en el juego hasta que sea
 ## detenido o se reproduzca otro archivo.
 
-define config.main_menu_music = "/audio/MÚSICA-POR-DEFECTO-PARKI-VERSIÓN-LUMINOSA.mp3"
+define config.main_menu_music = "/audio/defecto_menu.mp3"
 
 
 ## Transiciones ################################################################
