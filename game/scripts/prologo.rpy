@@ -2,7 +2,6 @@ label prologo:
 
     $ renpy.pause(3.0, hard=True)
 
-    image bg prologo_sin_parquita = Transform("images/fondo.png", size=(1920, 1080))
 
     # Música de fondo del prólogo, en loop
     play music "audio/prologo_tema.mp3" loop fadein 1.0
@@ -25,7 +24,7 @@ label prologo:
 
     muerte "Parkita, tengo una misión muy importante para ti."
 
-    scene prologo_sin_parquita with fade
+    scene fondo_prologo1 with fade
     show parquita nerviosa
 
     "Parkita levantó la mirada, algo confundida."
