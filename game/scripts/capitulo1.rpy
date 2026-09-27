@@ -1,7 +1,20 @@
 label capitulo1:
 
+    # Posiciones fijas: Parkita a la izquierda, Valentina a la derecha
+    transform char_left:
+        xalign 0.15
+        yalign 1.0
+
+    transform char_right:
+        xalign 0.85
+        yalign 1.0
+
+    # Música de fondo de todo el capítulo de Valentina, en loop
+    play music "audio/valentina_tema.mp3" loop fadein 1.0
+
     # --- INTRODUCCIÓN DEL CAPÍTULO 1 ---
-    scene bg room
+    scene expression "images/scenes/vale/habitacion.png"
+    with fade
 
     "El ciclón había azotado la ciudad durante horas. Las calles estaban prácticamente vacías; el frío había congelado ventanas, puertas y calles enteras."
     "Parkita caminaba entre hospitales y edificios, cumpliendo con su trabajo una vida tras otra, una persona tras otra, hasta que algo llamó su atención."
@@ -11,7 +24,7 @@ label capitulo1:
     "Su cuerpo, sin embargo, no pudo soportarlo. La hipotermia la había dejado en coma, pero todavía había algo diferente:"
     "Valentina aún estaba luchando para sobrevivir."
 
-    show parquita
+    show parquita relajada at char_left
     parquita "Todavía no..."
 
     "Miró su libro buscando qué hacer. Había una regla que llamaba especialmente su atención:"
@@ -25,7 +38,7 @@ label capitulo1:
     "Parkita levantó su guadaña. Con un movimiento, separó el alma de Valentina de su cuerpo."
     "La joven abrió los ojos. Al principio no entendía dónde estaba o qué es lo que hacía, hasta que vio a Parkita."
 
-    show valentina
+    show valentina triste at char_right
     valentina "¿Qué? ¿Qué eres?"
 
     parquita "..."
@@ -69,8 +82,10 @@ label capitulo1:
     "Parkita chasqueó los dedos y el mundo desapareció."
 
     # --- RECUERDO 1 ---
-    scene bg room
+    scene expression "images/scenes/vale/sala_de_estar.png"
+    with fade
 
+    show valentina relajada at char_right
     "La oscuridad desapareció. Ahora estaban en una habitación cálida. Valentina estaba sentada en el suelo jugando con tres pequeños gatos: Ron, Chara y Chimuelo."
     "Los tres habían llegado a su vida durante una noche de invierno. Valentina los había adoptado casi inmediatamente."
     "Parkita observó la escena. Valentina parecía genuinamente feliz, pero algo llamó su atención. Parkita levantó la mano y preguntó:"
@@ -83,6 +98,7 @@ label capitulo1:
             "Parkita asintió, pensando en que la vida es igual para todos..."
 
         "¿Por qué no un perro?":
+            show valentina enojada at char_right
             "Valentina respondió algo molesta, como si fuera asunto de la Muerte elegir sus gustos."
             valentina "Los perros son sucios, no me gustan para nada."
             "Parkita la observó en silencio, pensando en que tenía preferencia solo por los gatos y preguntó:"
@@ -92,9 +108,11 @@ label capitulo1:
     "Parkita chasqueó los dedos llevando de inmediato a otro recuerdo."
 
     # --- RECUERDO 1.2 ---
+    show valentina relajada at char_right
     "Valentina seguía jugando con sus gatos. Todo parecía tranquilo, hasta que un perro comenzó a ladrar desde el departamento vecino."
     "Valentina dejó de jugar, su expresión cambió y gritó:"
 
+    show valentina enojada at char_right
     valentina "¡¿Puedes callarte?!"
 
     "Mientras que el perro continuó ladrando sin cesar, lo que enojaba más a Valentina."
@@ -115,14 +133,17 @@ label capitulo1:
     "Parkita guardó silencio, chasqueó los dedos y el recuerdo desapareció al instante."
 
     # --- RECUERDO 2 ---
-    scene bg room
+    scene expression "images/scenes/vale/casa.png"
+    with fade
 
+    show valentina enojada at char_right
     "Una noche de invierno, un perro estaba sentado frente al edificio donde vivía Valentina. Temblaba, tenía hambre, esperaba que alguien le diera algo de comer."
     "Valentina salió del edificio. Lo miró, no con preocupación, sino con asco."
 
     valentina "Fuera."
 
     "El perro no se movió. Valentina lo espantó de la entrada y lo obligó a alejarse hacia la calle."
+    show parquita normal at char_left
     "Parkita observó."
 
     menu:
@@ -134,6 +155,7 @@ label capitulo1:
 
         "¿Qué ganas con echarlo?":
             valentina "Que no baje el precio del edificio."
+            show parquita enojada at char_left
             "Parkita quedó completamente seria con una respuesta tan fría."
             parquita "¿Eso es todo?"
             valentina "Sí."
@@ -141,6 +163,8 @@ label capitulo1:
     "Parkita chasqueó los dedos. Le mostró lo que había ocurrido después: el perro había terminado solo en un parque. La noche pasó, el frío también y nadie llegó."
     "Mientras Valentina observaba el recuerdo, su expresión cambió."
 
+    show valentina triste at char_right
+    show parquita enojada at char_left
     valentina "Yo..."
     parquita "No tenía dónde ir."
 
@@ -150,6 +174,7 @@ label capitulo1:
     "..."
     parquita "Pero no lo hiciste."
 
+    show valentina triste at char_right
     "Valentina comenzó a llorar mientras intentó explicar."
 
     valentina "Fue un error."
@@ -158,6 +183,7 @@ label capitulo1:
 
     "Parkita se acercó."
 
+    show parquita normal at char_left
     parquita "¿Segura?"
 
     "Valentina levantó la mirada con lágrimas en los ojos."
@@ -176,6 +202,7 @@ label capitulo1:
     "Silencio."
     valentina "Tengo mucho por lo que vivir."
 
+    show valentina triste at char_right
     "Valentina comenzó a llorar pensando en todo."
 
     valentina "¿Qué va a ser de mis gatos sin mí?"
@@ -188,6 +215,7 @@ label capitulo1:
 
     valentina "Si tienes corazón... me dejarás vivir."
 
+    show parquita cansada at char_left
     "La miró directamente. Parkita quedó en silencio; por primera vez desde que había comenzado su trabajo... no sabía qué decisión tomar."
     "Pero entonces sintió algo, una presencia. Otra persona estaba luchando por su vida en el mismo hospital."
     "Parkita miró hacia la puerta."
@@ -201,5 +229,7 @@ label capitulo1:
     parquita "Tu oportunidad puede esperar."
 
     "Y desapareció..."
+
+    stop music fadeout 1.0
 
     return

@@ -2,9 +2,10 @@ label prologo:
 
     $ renpy.pause(3.0, hard=True)
 
-    scene bg room
+    # Música de fondo del prólogo, en loop
+    play music "audio/prologo_tema.mp3" loop fadein 1.0
 
-    show parquita
+    scene fondo_prologo with fade
 
     "Dicen que la Muerte nunca descansa."
     "Pero eso es mentira."
@@ -21,6 +22,9 @@ label prologo:
     "Tomó el teléfono y llamó a una joven becaria."
 
     muerte "Parkita, tengo una misión muy importante para ti."
+
+    scene fondo_prologo1 with fade
+    show parquita nerviosa
 
     "Parkita levantó la mirada, algo confundida."
 
@@ -56,3 +60,4 @@ label prologo:
     "La Muerte ya se había ido y así comenzó el primer día de vacaciones de la Muerte y el primer día de trabajo de Parkita."
 
     return
+
