@@ -23,7 +23,7 @@ label prologo:
 
     muerte "Parkita, tengo una misión muy importante para ti."
 
-    scene fondo_prologo1 with fade
+    scene prologo_sin_parquita with fade
     show parquita nerviosa
 
     "Parkita levantó la mirada, algo confundida."
