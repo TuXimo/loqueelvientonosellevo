@@ -566,7 +566,16 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Hecho con {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Hecho con {a=https://www.renpy.org/}Ren'Py{/a} por grupo 6")
+            text _("Facundo Castillo ")
+            text _("Frida Kala Meizenq ")
+            text _("Fiamma Riquero ")
+            text _("Victoria Trapé ")
+            text _("Julieta Robles ")
+            text _("Adriano Oyola ")
+            text _("Nazareno Tondini ")
+            text _("Máximo Brunetti  ")
+            text _("Ingacio Scamp")
 
 
 style about_label is gui_label
